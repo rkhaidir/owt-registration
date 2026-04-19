@@ -35,6 +35,16 @@ html {
   border-radius: 24px;
   backdrop-filter: blur(16px);
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.18);
+  gap: 16px;
+}
+
+.brand-wrap {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.brand-copy {
+  min-width: 0;
 }
 
 .brand-mark {
@@ -47,6 +57,7 @@ html {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   box-shadow: 0 10px 24px rgba(59, 130, 246, 0.35);
   color: #fff;
+  flex-shrink: 0;
 }
 
 .brand-mark-inner {
@@ -60,47 +71,15 @@ html {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .brand-subtitle {
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.78rem;
   line-height: 1.1;
-}
-
-.modern-toggler .navbar-toggler-icon {
-  filter: brightness(0) invert(1);
-}
-
-.nav-pill-group {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-}
-
-.nav-pill {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.78);
-  padding: 10px 16px;
-  border-radius: 14px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.nav-pill:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.nav-pill.active {
-  color: #fff;
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.95),
-    rgba(6, 182, 212, 0.95)
-  );
-  box-shadow: 0 10px 24px rgba(59, 130, 246, 0.28);
 }
 
 .language-toggle-btn {
@@ -259,19 +238,69 @@ html {
   box-shadow: 0 14px 30px rgba(13, 110, 253, 0.22);
 }
 
-@media (max-width: 991px) {
-  .navbar-shell {
-    border-radius: 20px;
+@media (max-width: 767px) {
+  .modern-navbar {
+    padding-top: 12px;
   }
 
-  .nav-pill-group {
+  .navbar-shell {
+    padding: 12px 14px !important;
+    border-radius: 20px;
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .brand-title {
+    font-size: 0.92rem;
+    white-space: normal;
+    line-height: 1.05;
+  }
+
+  .brand-subtitle {
+    font-size: 0.72rem;
+  }
+
+  .language-toggle-btn {
+    min-width: 88px;
+    height: 42px;
+  }
+
+  .lang-chip {
+    width: 40px;
+    font-size: 0.78rem;
+  }
+
+  .lang-slider {
+    width: 40px;
+    height: 34px;
+  }
+
+  .lang-slider.right {
+    transform: translateX(40px);
+  }
+
+  .submit-btn-modern {
     width: 100%;
   }
 }
 
-@media (max-width: 767px) {
-  .submit-btn-modern {
-    width: 100%;
+@media (max-width: 480px) {
+  .navbar-shell {
+    align-items: flex-start;
+  }
+
+  .brand-wrap {
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .brand-title {
+    font-size: 0.86rem;
   }
 
   .brand-subtitle {
