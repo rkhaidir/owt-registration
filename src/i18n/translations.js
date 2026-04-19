@@ -1,0 +1,118 @@
+export const translations = {
+  id: {
+    brand: "97 Sim Racing Community",
+    navHome: "Home",
+    navRegister: "Pendaftaran",
+    navInfo: "Info",
+    langLabel: "Bahasa",
+    heroBadge: "Open Wheel Trophy",
+    heroTitle: "Pendaftaran Ronde 1 - Open Wheel Trophy 2026",
+    heroDesc:
+      "Selamat datang di portal pendaftaran resmi Open Wheel Trophy. Platform game yang digunakan Assetto Corsa.",
+    formTitle: "Form Pendaftaran",
+    formDesc: "Masukkan data peserta dengan benar sebelum dikirim.",
+    name: "Nama",
+    namePlaceholder: "Masukkan nama lengkap",
+    guid: "GUID",
+    guidPlaceholder: "Masukkan GUID",
+    team: "Nama Tim",
+    teamPlaceholder: "Masukkan nama tim",
+    raceNumber: "Nomor Balap",
+    raceNumberPlaceholder: "Masukkan nomor balap",
+    confirmLabel: "Saya menyatakan data yang saya isi sudah benar.",
+    submit: "Kirim Pendaftaran",
+    submitting: "Mengirim...",
+    successTitle: "Pendaftaran Selesai",
+    successDesc:
+      "Data Anda berhasil dikirim. Silakan gabung ke Discord untuk informasi lanjutan event.",
+    discordButton: "Masuk ke Discord",
+    backToForm: "Kembali ke Form",
+    infoTitle: "Cara menghubungkan ke Google Sheets",
+    infoBody:
+      "Buat Google Sheet dengan kolom: Timestamp, Nama, GUID, Nama Tim, Nomor Balap. Lalu buat Google Apps Script, deploy sebagai Web App, dan tempel URL deployment ke APP_SCRIPT_URL.",
+    footerNote:
+      "Validasi duplikat dilakukan di frontend dan backend untuk mencegah GUID serta nomor balap ganda.",
+    alertConfig:
+      "APP_SCRIPT_URL belum diisi. Validasi online dan penyimpanan ke Google Sheets belum aktif.",
+    loadingReference:
+      "Memuat data GUID dan nomor balap yang sudah terdaftar...",
+    referenceLoaded: "Data referensi berhasil dimuat.",
+    referenceFailed:
+      "Gagal memuat data referensi. Form tetap bisa dibuka, tetapi validasi duplikat online belum tersedia.",
+    sending: "Sedang mengirim data pendaftaran...",
+    sent: "Data berhasil dikirim.",
+    failed: "Pengiriman gagal.",
+    requiredName: "Nama wajib diisi.",
+    requiredGuid: "GUID wajib diisi.",
+    requiredTeam: "Nama tim wajib diisi.",
+    requiredRaceNumber: "Nomor balap wajib diisi.",
+    confirmError: "Anda harus mencentang konfirmasi data terlebih dahulu.",
+    guidUsed: "GUID sudah digunakan. Silakan gunakan GUID lain.",
+    raceNumberUsed: "Nomor balap sudah digunakan. Silakan pilih nomor lain.",
+    invalidRaceNumber:
+      "Nomor balap harus 1 sampai 99 dan tidak boleh diawali nol.",
+    registrationClosedTitle: "Pendaftaran Ditutup",
+    registrationClosed: "Pendaftaran saat ini ditutup.",
+    configWarning:
+      "APP_SCRIPT_URL belum diisi. Silakan hubungkan ke Google Apps Script terlebih dahulu.",
+    genericError: "Terjadi kesalahan saat menyimpan data.",
+  },
+  en: {
+    brand: "97 Sim Racing Community",
+    navHome: "Home",
+    navRegister: "Register",
+    navInfo: "Info",
+    langLabel: "Language",
+    heroBadge: "Open Wheel Trophy",
+    heroTitle: "Round 1 Registration - Open Wheel Trophy 2026",
+    heroDesc:
+      "Welcome to the official 1H Trophy registration portal. The gaming platform used is Assetto Corsa.",
+    formTitle: "Registration Form",
+    formDesc: "Enter participant data carefully before submitting.",
+    name: "Name",
+    namePlaceholder: "Enter full name",
+    guid: "GUID",
+    guidPlaceholder: "Enter GUID",
+    team: "Team Name",
+    teamPlaceholder: "Enter team name",
+    raceNumber: "Race Number",
+    raceNumberPlaceholder: "Enter race number",
+    confirmLabel: "I confirm that the data I entered is correct.",
+    submit: "Submit Registration",
+    submitting: "Submitting...",
+    successTitle: "Registration Complete",
+    successDesc:
+      "Your data has been submitted successfully. Please join Discord for further event information.",
+    discordButton: "Join Discord",
+    backToForm: "Back to Form",
+    infoTitle: "How to connect to Google Sheets",
+    infoBody:
+      "Create a Google Sheet with columns: Timestamp, Name, GUID, Team Name, Race Number. Then create a Google Apps Script, deploy it as a Web App, and paste the deployment URL into APP_SCRIPT_URL.",
+    footerNote:
+      "Duplicate validation runs on both frontend and backend to prevent duplicate GUIDs and race numbers.",
+    alertConfig:
+      "APP_SCRIPT_URL has not been set. Online validation and Google Sheets saving are not active yet.",
+    loadingReference: "Loading used GUID and race number data...",
+    referenceLoaded: "Reference data loaded successfully.",
+    referenceFailed:
+      "Failed to load reference data. The form can still be opened, but online duplicate validation is unavailable.",
+    sending: "Sending registration data...",
+    sent: "Data submitted successfully.",
+    failed: "Submission failed.",
+    requiredName: "Name is required.",
+    requiredGuid: "GUID is required.",
+    requiredTeam: "Team name is required.",
+    requiredRaceNumber: "Race number is required.",
+    confirmError: "You must tick the confirmation checkbox first.",
+    guidUsed: "GUID has already been used. Please use another GUID.",
+    raceNumberUsed:
+      "Race number has already been used. Please choose another number.",
+    invalidRaceNumber:
+      "Race number must be between 1 and 99 and must not start with zero.",
+    registrationClosedTitle: "Registration Closed",
+    registrationClosed: "Registration is currently closed.",
+    configWarning:
+      "APP_SCRIPT_URL has not been set. Please connect it to Google Apps Script first.",
+    genericError: "An error occurred while saving data.",
+  },
+};
