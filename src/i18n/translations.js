@@ -50,7 +50,7 @@ export const translations = {
     guidUsed: "GUID sudah digunakan. Silakan gunakan GUID lain.",
     raceNumberUsed: "Nomor balap sudah digunakan. Silakan pilih nomor lain.",
     invalidRaceNumber:
-      "Nomor balap harus 1 sampai 99 dan tidak boleh diawali nol.",
+      "Nomor balap harus 1 sampai 999 dan tidak boleh diawali nol.",
     registrationClosedTitle: "Pendaftaran Ditutup",
     registrationClosed: "Pendaftaran saat ini ditutup.",
     configWarning:
@@ -108,7 +108,7 @@ export const translations = {
     raceNumberUsed:
       "Race number has already been used. Please choose another number.",
     invalidRaceNumber:
-      "Race number must be between 1 and 99 and must not start with zero.",
+      "Race number must be between 1 and 999 and must not start with zero.",
     registrationClosedTitle: "Registration Closed",
     registrationClosed: "Registration is currently closed.",
     configWarning:

@@ -66,7 +66,7 @@ export default function Hero({ t }) {
 
               <div className="bg-light rounded-3 p-3 small">
                 <div>✔ Single Driver</div>
-                <div>✔ Race Number 1 - 99</div>
+                <div>✔ Race Number 1 - 999</div>
               </div>
             </div>
           </div>

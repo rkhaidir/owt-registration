@@ -7,7 +7,7 @@ import { translations } from "../i18n/translations";
 import { normalizeRaceNumber, normalizeText } from "../utils/helpers";
 
 const APP_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxt4jWhOtacq-QxZpiwl7Jzv86VAjh6lmg1hpfxNppIjh8AquClSzQyq-0Co3gYQYO0ZA/exec";
+  "https://script.google.com/macros/s/AKfycbxTBqczsnL1meYn1R-8A085YSQfBQxzvnJUT73Gz_tHVbfPAbtFBiNVC9nW3hEA5hWtcQ/exec";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -113,7 +113,7 @@ export default function HomePage() {
       nextErrors.nomorBalap = t.requiredRaceNumber;
     } else {
       const raceNumber = form.nomorBalap.trim();
-      if (!/^[1-9][0-9]?$/.test(raceNumber)) {
+      if (!/^[1-9][0-9]{0,2}?$/.test(raceNumber)) {
         nextErrors.nomorBalap = t.invalidRaceNumber;
       }
     }
@@ -141,7 +141,7 @@ export default function HomePage() {
     const { name, value } = event.target;
 
     if (name === "nomorBalap") {
-      const onlyDigits = value.replace(/\D/g, "").slice(0, 2);
+      const onlyDigits = value.replace(/\D/g, "").slice(0, 3);
       setForm((prev) => ({ ...prev, [name]: onlyDigits }));
       setErrors((prev) => ({ ...prev, [name]: "", form: "" }));
       setAlert(null);
