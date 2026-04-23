@@ -7,7 +7,7 @@ import { translations } from "../i18n/translations";
 import { normalizeRaceNumber, normalizeText } from "../utils/helpers";
 
 const APP_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxTBqczsnL1meYn1R-8A085YSQfBQxzvnJUT73Gz_tHVbfPAbtFBiNVC9nW3hEA5hWtcQ/exec";
+  "https://script.google.com/macros/s/AKfycbzH1y5YJHNhuqPpaOTNNurIHLHc6pUFXiWPR25QjuQGCatENbxtRzGJl-t8Ggz6Clsrag/exec";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -17,6 +17,7 @@ export default function HomePage() {
   const [form, setForm] = useState({
     nama: "",
     guid: "",
+    discordUsername: "",
     team: "",
     nomorBalap: "",
   });
@@ -107,6 +108,8 @@ export default function HomePage() {
 
     if (!form.nama.trim()) nextErrors.nama = t.requiredName;
     if (!form.guid.trim()) nextErrors.guid = t.requiredGuid;
+    if (!form.discordUsername.trim())
+      nextErrors.discordUsername = t.requiredDiscordUsername;
     if (!form.team.trim()) nextErrors.team = t.requiredTeam;
 
     if (!form.nomorBalap.trim()) {
@@ -173,6 +176,7 @@ export default function HomePage() {
       const body = new URLSearchParams({
         nama: form.nama,
         guid: form.guid,
+        discordUsername: form.discordUsername,
         team: form.team,
         nomorBalap: form.nomorBalap,
       });
@@ -194,7 +198,13 @@ export default function HomePage() {
         normalizeRaceNumber(form.nomorBalap),
       ]);
       setStatusText(t.sent);
-      setForm({ nama: "", guid: "", team: "", nomorBalap: "" });
+      setForm({
+        nama: "",
+        guid: "",
+        discordUsername: "",
+        team: "",
+        nomorBalap: "",
+      });
       setConfirmed(false);
       setErrors({});
       navigate("/success");

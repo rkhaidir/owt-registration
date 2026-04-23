@@ -51,6 +51,9 @@ export const translations = {
     raceNumberUsed: "Nomor balap sudah digunakan. Silakan pilih nomor lain.",
     invalidRaceNumber:
       "Nomor balap harus 1 sampai 999 dan tidak boleh diawali nol.",
+    discordUsername: "Username Discord",
+    discordUsernamePlaceholder: "Masukkan username Discord",
+    requiredDiscordUsername: "Username Discord wajib diisi.",
     registrationClosedTitle: "Pendaftaran Ditutup",
     registrationClosed: "Pendaftaran saat ini ditutup.",
     configWarning:
@@ -109,6 +112,9 @@ export const translations = {
       "Race number has already been used. Please choose another number.",
     invalidRaceNumber:
       "Race number must be between 1 and 999 and must not start with zero.",
+    discordUsername: "Discord Username",
+    discordUsernamePlaceholder: "Enter Discord username",
+    requiredDiscordUsername: "Discord username is required.",
     registrationClosedTitle: "Registration Closed",
     registrationClosed: "Registration is currently closed.",
     configWarning:

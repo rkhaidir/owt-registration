@@ -52,6 +52,15 @@ export default function RegistrationForm({
             />
 
             <FormField
+              label={t.discordUsername}
+              name="discordUsername"
+              value={form.discordUsername}
+              onChange={onChange}
+              placeholder={t.discordUsernamePlaceholder}
+              error={errors.discordUsername}
+            />
+
+            <FormField
               label={t.team}
               name="team"
               value={form.team}
