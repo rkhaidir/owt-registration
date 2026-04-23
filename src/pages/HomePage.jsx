@@ -7,7 +7,7 @@ import { translations } from "../i18n/translations";
 import { normalizeRaceNumber, normalizeText } from "../utils/helpers";
 
 const APP_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzH1y5YJHNhuqPpaOTNNurIHLHc6pUFXiWPR25QjuQGCatENbxtRzGJl-t8Ggz6Clsrag/exec";
+  "https://script.google.com/macros/s/AKfycbwlnY2JsGUUB_E2vZa1jWdev9Y7QUbofRR61OUbY5uGSO_8yZr7mGpjEsgk0loOBWNyaw/exec";
 
 export default function HomePage() {
   const navigate = useNavigate();
