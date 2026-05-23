@@ -80,6 +80,41 @@ export default function RegistrationForm({
             />
           </div>
 
+          <div className="card mt-3">
+            <div className="card-header">
+              <span className="fs-6 fw-bold">{t.usedNumbersLabelRound}</span>
+            </div>
+            <div className="card-body">
+              <span className="badge text-bg-danger m-1">57</span>
+              <span className="badge text-bg-danger m-1">471</span>
+              <span className="badge text-bg-danger m-1">69</span>
+              <span className="badge text-bg-danger m-1">885</span>
+              <span className="badge text-bg-danger m-1">407</span>
+              <span className="badge text-bg-danger m-1">26</span>
+              <span className="badge text-bg-danger m-1">76</span>
+              <span className="badge text-bg-danger m-1">7</span>
+              <span className="badge text-bg-danger m-1">480</span>
+              <span className="badge text-bg-danger m-1">48</span>
+              <span className="badge text-bg-danger m-1">55</span>
+              <span className="badge text-bg-danger m-1">920</span>
+              <span className="badge text-bg-danger m-1">12</span>
+              <span className="badge text-bg-danger m-1">41</span>
+              <span className="badge text-bg-danger m-1">3</span>
+              <span className="badge text-bg-danger m-1">17</span>
+              <span className="badge text-bg-danger m-1">11</span>
+              <span className="badge text-bg-danger m-1">204</span>
+              <span className="badge text-bg-danger m-1">61</span>
+              <span className="badge text-bg-danger m-1">18</span>
+              <span className="badge text-bg-danger m-1">81</span>
+              <span className="badge text-bg-danger m-1">19</span>
+              <span className="badge text-bg-danger m-1">666</span>
+              <span className="badge text-bg-danger m-1">14</span>
+              <span className="badge text-bg-danger m-1">25</span>
+              <span className="badge text-bg-danger m-1">28</span>
+              <span className="badge text-bg-danger m-1">71</span>
+            </div>
+          </div>
+
           <div className="confirm-box mt-4">
             <div className="form-check m-0 d-flex align-items-start gap-3">
               <input

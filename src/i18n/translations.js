@@ -6,7 +6,7 @@ export const translations = {
     navInfo: "Info",
     langLabel: "Bahasa",
     heroBadge: "Open Wheel Trophy",
-    heroTitle: "Pendaftaran Ronde 1 - Open Wheel Trophy 2026",
+    heroTitle: "Pendaftaran Ronde 2 - Open Wheel Trophy 2026",
     heroDesc:
       "Selamat datang di portal pendaftaran resmi Open Wheel Trophy. Platform game yang digunakan Assetto Corsa.",
     formTitle: "Form Pendaftaran",
@@ -56,6 +56,8 @@ export const translations = {
     requiredDiscordUsername: "Username Discord wajib diisi.",
     registrationClosedTitle: "Pendaftaran Ditutup",
     registrationClosed: "Pendaftaran saat ini ditutup.",
+    usedNumbersLabelRound:
+      "Nomor yang hanya boleh dipakai oleh Pembalap yang sudah mengikuti round sebelumnya. Pembalap baru tidak diperbolehkan menggunakan nomor di bawah ini",
     configWarning:
       "APP_SCRIPT_URL belum diisi. Silakan hubungkan ke Google Apps Script terlebih dahulu.",
     genericError: "Terjadi kesalahan saat menyimpan data.",
@@ -67,7 +69,7 @@ export const translations = {
     navInfo: "Info",
     langLabel: "Language",
     heroBadge: "Open Wheel Trophy",
-    heroTitle: "Round 1 Registration - Open Wheel Trophy 2026",
+    heroTitle: "Round 2 Registration - Open Wheel Trophy 2026",
     heroDesc:
       "Welcome to the official 1H Trophy registration portal. The gaming platform used is Assetto Corsa.",
     formTitle: "Registration Form",
@@ -117,6 +119,8 @@ export const translations = {
     requiredDiscordUsername: "Discord username is required.",
     registrationClosedTitle: "Registration Closed",
     registrationClosed: "Registration is currently closed.",
+    usedNumbersLabelRound:
+      "Numbers that may only be used by drivers that have participated in the previous round. New drivers are not allowed to use the numbers listed below.",
     configWarning:
       "APP_SCRIPT_URL has not been set. Please connect it to Google Apps Script first.",
     genericError: "An error occurred while saving data.",

@@ -15,7 +15,7 @@ export default function Navbar({ t, language, setLanguage }) {
             to="/"
           >
             <span className="brand-mark">
-              <span className="brand-mark-inner">SR</span>
+              <span className="brand-mark-inner">97</span>
             </span>
 
             <span className="brand-copy">

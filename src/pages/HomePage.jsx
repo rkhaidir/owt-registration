@@ -24,6 +24,7 @@ export default function HomePage() {
   const [errors, setErrors] = useState({});
   const [confirmed, setConfirmed] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [initialLoading, setInitialLoading] = useState(true);
   const [statusText, setStatusText] = useState("");
   const [alert, setAlert] = useState(null);
   const [usedGuids, setUsedGuids] = useState([]);
@@ -43,37 +44,53 @@ export default function HomePage() {
   }, [language]);
 
   useEffect(() => {
-    const loadExistingData = async () => {
+    const loadInitialData = async () => {
       if (!APP_SCRIPT_URL || APP_SCRIPT_URL.includes("PASTE_YOUR")) {
         setStatusText(t.alertConfig);
+        setInitialLoading(false);
         return;
       }
 
       try {
+        setInitialLoading(true);
         setStatusText(t.loadingReference);
-        const response = await fetch(
-          `${APP_SCRIPT_URL}?action=getExistingData`,
-        );
-        const result = await response.json();
+
+        const [existingDataResponse, settingsResponse] = await Promise.all([
+          fetch(`${APP_SCRIPT_URL}?action=getExistingData`),
+          fetch(`${APP_SCRIPT_URL}?action=getSettings`),
+        ]);
+
+        const existingData = await existingDataResponse.json();
+        const settings = await settingsResponse.json();
 
         setUsedGuids(
-          Array.isArray(result.usedGuids)
-            ? result.usedGuids.map((item) => normalizeText(item))
+          Array.isArray(existingData.usedGuids)
+            ? existingData.usedGuids.map((item) => normalizeText(item))
             : [],
         );
         setUsedRaceNumbers(
-          Array.isArray(result.usedRaceNumbers)
-            ? result.usedRaceNumbers.map((item) => normalizeRaceNumber(item))
+          Array.isArray(existingData.usedRaceNumbers)
+            ? existingData.usedRaceNumbers.map((item) =>
+                normalizeRaceNumber(item),
+              )
             : [],
         );
+
+        if (settings.success) {
+          setRegistrationOpen(settings.registrationOpen !== false);
+          setCloseMessage(settings.closeMessage || "");
+        }
+
         setStatusText(t.referenceLoaded);
       } catch (error) {
         console.error(error);
         setStatusText(t.referenceFailed);
+      } finally {
+        setInitialLoading(false);
       }
     };
 
-    loadExistingData();
+    loadInitialData();
   }, [t]);
 
   useEffect(() => {
@@ -160,6 +177,14 @@ export default function HomePage() {
     event.preventDefault();
     setAlert(null);
 
+    if (initialLoading) {
+      setAlert({
+        type: "warning",
+        message: "Mohon tunggu sampai data selesai dimuat.",
+      });
+      return;
+    }
+
     const nextErrors = validate();
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
@@ -226,7 +251,19 @@ export default function HomePage() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              {registrationOpen ? (
+              {initialLoading ? (
+                <div className="card border-0 rounded-5 shadow-lg form-card">
+                  <div className="card-body p-4 p-md-5 text-center">
+                    <div className="spinner-border mb-3" role="status" />
+                    <h2 className="fw-bold text-dark mb-3">
+                      {t.loadingReference}
+                    </h2>
+                    <p className="text-secondary mb-0">
+                      Mohon tunggu, data sedang dimuat.
+                    </p>
+                  </div>
+                </div>
+              ) : registrationOpen ? (
                 <RegistrationForm
                   t={t}
                   form={form}
