@@ -113,6 +113,7 @@ export default function RegistrationForm({
               <span className="badge text-bg-danger m-1">81</span>
               <span className="badge text-bg-danger m-1">124</span>
               <span className="badge text-bg-danger m-1">163</span>
+              <span className="badge text-bg-danger m-1">204</span>
               <span className="badge text-bg-danger m-1">228</span>
               <span className="badge text-bg-danger m-1">259</span>
               <span className="badge text-bg-danger m-1">354</span>
