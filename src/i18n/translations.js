@@ -6,7 +6,7 @@ export const translations = {
     navInfo: "Info",
     langLabel: "Bahasa",
     heroBadge: "Open Wheel Trophy",
-    heroTitle: "Pendaftaran Ronde 3 - Open Wheel Trophy 2026",
+    heroTitle: "Pendaftaran Ronde 4 - Open Wheel Trophy 2026",
     heroDesc:
       "Selamat datang di portal pendaftaran resmi Open Wheel Trophy. Platform game yang digunakan Assetto Corsa.",
     formTitle: "Form Pendaftaran",
@@ -69,7 +69,7 @@ export const translations = {
     navInfo: "Info",
     langLabel: "Language",
     heroBadge: "Open Wheel Trophy",
-    heroTitle: "Round 3 Registration - Open Wheel Trophy 2026",
+    heroTitle: "Round 4 Registration - Open Wheel Trophy 2026",
     heroDesc:
       "Welcome to the official 1H Trophy registration portal. The gaming platform used is Assetto Corsa.",
     formTitle: "Registration Form",
