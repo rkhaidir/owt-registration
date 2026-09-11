@@ -86,24 +86,29 @@ export default function RegistrationForm({
             </div>
             <div className="card-body">
               <span className="badge text-bg-danger m-1">3</span>
+              <span className="badge text-bg-danger m-1">4</span>
               <span className="badge text-bg-danger m-1">5</span>
               <span className="badge text-bg-danger m-1">7</span>
-              <span className="badge text-bg-danger m-1">9</span>
               <span className="badge text-bg-danger m-1">9</span>
               <span className="badge text-bg-danger m-1">11</span>
               <span className="badge text-bg-danger m-1">12</span>
               <span className="badge text-bg-danger m-1">13</span>
               <span className="badge text-bg-danger m-1">14</span>
+              <span className="badge text-bg-danger m-1">16</span>
               <span className="badge text-bg-danger m-1">17</span>
               <span className="badge text-bg-danger m-1">19</span>
               <span className="badge text-bg-danger m-1">20</span>
+              <span className="badge text-bg-danger m-1">22</span>
               <span className="badge text-bg-danger m-1">24</span>
               <span className="badge text-bg-danger m-1">25</span>
               <span className="badge text-bg-danger m-1">26</span>
               <span className="badge text-bg-danger m-1">27</span>
+              <span className="badge text-bg-danger m-1">30</span>
               <span className="badge text-bg-danger m-1">34</span>
+              <span className="badge text-bg-danger m-1">37</span>
               <span className="badge text-bg-danger m-1">41</span>
               <span className="badge text-bg-danger m-1">45</span>
+              <span className="badge text-bg-danger m-1">48</span>
               <span className="badge text-bg-danger m-1">55</span>
               <span className="badge text-bg-danger m-1">61</span>
               <span className="badge text-bg-danger m-1">65</span>
@@ -115,10 +120,14 @@ export default function RegistrationForm({
               <span className="badge text-bg-danger m-1">81</span>
               <span className="badge text-bg-danger m-1">83</span>
               <span className="badge text-bg-danger m-1">95</span>
+              <span className="badge text-bg-danger m-1">97</span>
+              <span className="badge text-bg-danger m-1">108</span>
+              <span className="badge text-bg-danger m-1">119</span>
               <span className="badge text-bg-danger m-1">124</span>
               <span className="badge text-bg-danger m-1">163</span>
               <span className="badge text-bg-danger m-1">204</span>
               <span className="badge text-bg-danger m-1">207</span>
+              <span className="badge text-bg-danger m-1">215</span>
               <span className="badge text-bg-danger m-1">227</span>
               <span className="badge text-bg-danger m-1">228</span>
               <span className="badge text-bg-danger m-1">259</span>
@@ -127,11 +136,14 @@ export default function RegistrationForm({
               <span className="badge text-bg-danger m-1">407</span>
               <span className="badge text-bg-danger m-1">471</span>
               <span className="badge text-bg-danger m-1">480</span>
+              <span className="badge text-bg-danger m-1">505</span>
               <span className="badge text-bg-danger m-1">666</span>
+              <span className="badge text-bg-danger m-1">711</span>
               <span className="badge text-bg-danger m-1">777</span>
               <span className="badge text-bg-danger m-1">885</span>
               <span className="badge text-bg-danger m-1">920</span>
               <span className="badge text-bg-danger m-1">998</span>
+              <span className="badge text-bg-danger m-1">999</span>
             </div>
           </div>
 
